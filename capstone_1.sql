@@ -106,5 +106,57 @@ select flight_number,avg(air_time) as avg_air_time
 from tutorial.flights
 group by 1;
 
+--Q22: Find flights with a scheduled departure time before 8 AM ?
+select * 
+from tutorial.flights 
+where scheduled_departure_time<800;
+
+--Q23: Count flights per airline code ?
+select airline_code,count(*) as flight_count
+from tutorial.flights 
+group by airline_code;
+
+--Q24:List flights with a late aircraft delay greater than 0 ?
+select *
+from tutorial.flights 
+where late_aircraft_delay>0;
+
+--Q25: Calculate the total distance flown ?
+select sum(distance) as total_distance_flown
+from tutorial.flights;
+
+--Q26: Find the flights with a scheduled arrival time after 10 PM ?
+select *
+from tutorial.flights 
+where schedued_arrival_time>2200;
+
+--Q27: List flights with a flight number between 2450 and 2500 ?
+select *
+from tutorial.flights 
+where flight_number  between 2450 and 2500;
+
+--Q28: Calculate the average departure delay ?
+select avg(departure_delay) as avg_departure_delay
+from tutorial.flights;
+
+--Q29: Find flights with  a security delay greater than 0 ?
+select *
+from tutorial.flights 
+where security_delay>0;
+
+--Q30: List flights sorted by distance in descending order ?
+select * 
+from tutorial.flights 
+order by distance desc;
+
+--Q31: Find round-trip flights (same origin and destination airports) ?
+--Del-Mum,Mum-Del (round trip flight example)
+select *
+from tutorial.flights as a
+self join tutorial.flights as b
+on a.origin_airport=b.destination_airport and a.destination_airport=b.origin_airport and a.flight_number<b.flight_number;
+
+
+
 
 

@@ -153,7 +153,7 @@ order by distance desc;
 --Del-Mum,Mum-Del (round trip flight example)
 select *
 from tutorial.flights as a
-self join tutorial.flights as b
+join tutorial.flights as b
 on a.origin_airport=b.destination_airport and a.destination_airport=b.origin_airport and a.flight_number<b.flight_number;
 
 

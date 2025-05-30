@@ -156,6 +156,20 @@ from tutorial.flights as a
 join tutorial.flights as b
 on a.origin_airport=b.destination_airport and a.destination_airport=b.origin_airport and a.flight_number<b.flight_number;
 
+--Q32: Calculate the average departure delay by destination city ?
+select destination_city,avg(departure_delay) as avg_departure_delay
+from tutorial.flights
+group by 1;
+
+--Q33: Find total arrival and departure delay for all flights ?
+Method_1:
+select flight_number,sum(departure_delay) as total_departure_delay,sum(arrival_delay) as total_arrival_delay
+from tutorial.flights
+group by 1;
+Method_2:
+select flight_number,(arrival_delay+departure_delay) as total_arri_depar_delay
+from tutorial.flights;
+
 
 
 

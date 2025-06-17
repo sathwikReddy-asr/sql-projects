@@ -1,6 +1,6 @@
 --Platform used:Mode.com
 --Table used:tutorial.crunchbase_companies 
---Date:14-06-2025
+--Date:07-06-2025
 
 --Q1: Find the list of unique country codes in the data ?
 select distinct (country_code) as unique_country_code

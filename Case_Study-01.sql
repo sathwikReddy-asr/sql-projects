@@ -1,6 +1,6 @@
 --Platform used:Mode.com
 --Table used:tutorial.oscar_nominees
---Date:11-06-2025
+--Date:17 jun 2025
 
 --Q1: Write a query to display all the records in the table tutorial.oscar_nominees ?
 select * from tutorial.oscar_nominees;                                                                                                         --selecting all records from table                   

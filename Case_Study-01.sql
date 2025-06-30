@@ -1,0 +1,3 @@
+--Platform used:Mode.com
+--Table used:tutorial.crunchbase_companies 
+--Date:11-06-2025

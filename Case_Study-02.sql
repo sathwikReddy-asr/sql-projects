@@ -1,6 +1,6 @@
 --Platform used:Mode.com
 --Table used:tutorial.kag_conversion_data
---Date:15-06-2025
+--Date:20-06-2025
 
 --Q1: Write a query to count the total number of records in the tutorial.kag_conversion_data dataset ?
 select count(*) as total_records                                                                                                          --counting all records and giving alias name

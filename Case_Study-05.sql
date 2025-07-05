@@ -1,3 +1,3 @@
 --Platform used:Mode.com
---Tables used:benn.college_football_players   and       benn.college_football_teams 
---Date:28-06-2025
+--Tables used:
+--Date:05-07-2025
